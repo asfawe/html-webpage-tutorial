@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{
+    margin:0;
+    padding:0;
+}
+body,button,input,select,table,textarea{
+    font-size: 12px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+button,input{
+    border-radius: 0;
+}
+fieldset,img{
+    border: 0;
+}
+ol,ul{
+    list-style: none;
+}
+address,em{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+#header{
+  background: #eee;
+  height: 100px;
+  /* 이와같이 가운데 정렬을 구현할 수가 있다. */
+  /* width: 1000px;
+  margin: 0 auto 20px auto; */
+  margin-bottom: 20px;
+}
+
+.header_inner{
+  width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+}
+#nav{
+    height: 40px;
+    border-bottom: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+     /* background: #eee; */
+    /* width: 1000px;
+    margin: 0 auto; */
+}
+
+.nav_inner {
+    width: 1000px;
+    margin: 0 auto;
+    /* margin: 10px auto 10px auto; */
+    /* background: #fff; */
+}
+
+#footer{
+  height: 100px;
+  background: #eee;
+}
+
+.footer_inner{
+  width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+#content{
+  background: #eee;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+  width: 1000px;
+  margin: 20px auto 20px auto;
+  /* height: 600px; */
+}
+/* #body{
+  width: 1000px;
+  margin: 0 auto;
+  } */
+.section_main{
+  width: 700px;
+  background: #ff0;
+  float: left;
+}
+
+.aside{
+    width: 300px;
+    background: #f00;
+    float: left;
+    height: 600px;
+}
+
+.section{
+  background: #f0f;
+  height: 300px;
+}
+
+
+.article{
+  background: green;
+  height: 300px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after{
+  clear: both; /* float 해제 */
+  display: block;
+  content: "";
+}
+
+.navigation_list{
+    float: left;
+    width: 142px;
+    line-height: 40px; /* 택스트를 상하로 가운데 정렬하는 속성 */
+    text-align: center;
+}
+
+.navigation_link{
+    font-size: 16px;
+    color: #00ab33;
+}
+
+.sub_menu{
+    width: 100%;
+    height: 100px;
+    background: #ff0;
+}
+
+</style>
+
+</head>
+<body>
+<!-- <div id="body"></div> -->
+    <div id="header">
+        <div class="header_inner">
+            header
+        </div>
+    </div>
+
+    <div id="nav">
+        <div class="nav_inner">
+            <ul class="navigation clearfix">
+                <li class="navigation_list">
+                    <a href="" class="navigation_link">메뉴1</a>
+                    <div class="sub_menu">
+                        sub_menu
+                    </div>
+                </li>
+                <li class="navigation_list"><a href="" class="navigation_link">메뉴2</a></li>
+                <li class="navigation_list"><a href="" class="navigation_link">메뉴3</a></li>
+                <li class="navigation_list"><a href="" class="navigation_link">메뉴4</a></li>
+                <li class="navigation_list"><a href="" class="navigation_link">메뉴5</a></li>
+                <li class="navigation_list"><a href="" class="navigation_link">메뉴6</a></li>
+                <li class="navigation_list"><a href="" class="navigation_link">메뉴7</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content" class="clearfix">
+        <div class="section_main">
+            <div class="section">section</div>
+            <div class="article">article</div>
+        </div>
+
+        <div class="aside">
+            aside
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="footer_inner">
+            footer
+        </div>
+    </div>
+
+</body>
+</html>
